@@ -22,7 +22,7 @@ int main (int argc, char **argv){
     return  0;
 }   
 
-// Distance First
+// Distance First d=sqrt((x2-x1)^2 +(y2-y1)^2)
 double calculateDistance(){
     double x1,y1,x2,y2;
     printf("Enter first point's coordinates (x1,y1):");
@@ -45,7 +45,7 @@ double calculatePerimeter() {
     printf("The perimeter of the city encompassed by your request is %.2lf\n", perimeter);
     return 2.5; // Difficulty
 }
-
+// Onto Area next, A=pi*r^2.
 double calculateArea(){
     double distance = calculateDistance();
     double radius = distance / 2;
@@ -53,13 +53,17 @@ double calculateArea(){
     printf("The area of the city encompassed by your request is %.2lf\n", area);
     return 3.5;
 }
+
+// Pentultimately, width, which of a circle is just the diameter.
 double calculateWidth(){
     double width = calculateDistance();
     printf("The width of the city encompassed by your request is %.2lf\n", width);
-
+    return 1;
 }
 
-
-
-
+// Last but not least is height which is the same scenario as width.
+double calculateHeight(){
+    double height = calculateDistance();
+    printf("The height of the city encompassed by your request is %.2lf\n", height);
+    return 1;
 }
