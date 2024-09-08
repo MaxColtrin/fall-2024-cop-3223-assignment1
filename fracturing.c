@@ -4,7 +4,7 @@
 
 #include <stdio.h>
 #include <math.h>
-#include PI 3.14159
+#define PI 3.14159
 
 double calculateDistance();
 double calculatePerimeter();
@@ -34,7 +34,7 @@ double calculateDistance(){
     
     printf("Point 1 entered x1 = %.2lf; y1 = %.2lf\n", x1, y1);
     printf("Point 2 entered x2 = %.2lf; y2 = %.2lf\n", x2, y2);
-    printf("Distance between the points is %.2lf\n", distnace);
+    printf("Distance between the points is %.2lf\n", distance);
 
     return distance;
 }
