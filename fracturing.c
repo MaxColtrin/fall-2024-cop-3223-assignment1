@@ -30,7 +30,7 @@ double calculateDistance(){
     printf("Enter second point's coordinates (x2,y2):");
     scanf("%lf %lf", &x2, &y2);
     
-    double distance = sqrt(pow(x2 - x1, 2) + pow(y2-y1, 2));
+    double distance = sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2));
     
     printf("Point 1 entered x1 = %.2lf; y1 = %.2lf\n", x1, y1);
     printf("Point 2 entered x2 = %.2lf; y2 = %.2lf\n", x2, y2);
